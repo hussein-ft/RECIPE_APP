@@ -1,0 +1,195 @@
+.my-home {
+    padding: 20px;
+}
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 20px;
+}
+
+.recipe-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+}
+
+.recipe-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 16 / 9; 
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.recipe-image-container:hover .recipe-image {
+    transform: scale(1.03);
+}
+
+.recipe-time {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+}
+
+.recipe-details {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.recipe-category {
+    font-size: 0.8em;
+    color: #555;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.recipe-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.recipe-author {
+    font-size: 0.8em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.recipe-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    color: #555;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.recipe-likes {
+    display: flex;
+    align-items: center;
+}
+
+.like-icon {
+    color: #e44d26;
+    margin-right: 5px;
+}
+
+.admin-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.admin-actions button {
+    background: none;
+    border: none;
+    color: #777;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.edit-icon {
+    color: brown;
+}
+
+.delete-icon {
+    color: goldenrod;
+}
+
+.loading-data {
+    text-align: center;
+    padding: 10px;
+    color: #888;
+    font-size: 0.9em;
+}
+.my-edit {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.my-edit h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.my-edit form {
+  display: flex;
+  flex-direction: column;
+}
+
+.my-edit input[type="text"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.my-edit input[type="text"]::placeholder {
+  color: #999;
+}
+
+.my-edit input[name="textArea"] { /* Target the description and instructions inputs */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  min-height: 80px; /* Provide some initial height for multi-line input */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.my-edit button {
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-edit button svg {
+  margin-right: 5px; /* Space between icon and text if you add text */
+}
+
+.my-edit button:hover {
+  background-color: #4cae4c;
+}
+
+.my-edit p {
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+}
